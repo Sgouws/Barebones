@@ -19,8 +19,7 @@
 [class*='cw-'] {
   float: left;
   padding: 10px;
-  margin-right: 10px;
-  background: #aaa; }
+  margin-right: 10px; }
 
 /* Floats last ".cw-" to the right */
 [class*='cw-']:last-of-type {
