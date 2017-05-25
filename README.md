@@ -4,9 +4,11 @@
 
 ## Usage
 
-```.container``` for 1140px wide, centered row.
+```.container``` for 1140px wide, centered container.
 
-```.frame``` for row. (clearfix and padding)
+```.frame``` for row. (clearfix and padding), columns(cw) live inside rows.
 
 12 column grid. ```.cw-1``` -> ```.cw-12```
+
+
 
