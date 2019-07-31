@@ -1,0 +1,30 @@
+$column-padding: 1rem;
+$margin-bottom: 1rem;
+
+%column-padding {
+  padding-left: $column-padding;
+  padding-right: $column-padding;
+}
+
+@mixin row-margin () {
+  margin-left: -$column-padding;
+  margin-right: -$column-padding;
+}
+
+.flex-row {
+  @include row-margin();
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+  
+.flex-column {
+    flex-basis: 50%;
+    padding: $column-padding;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .flex.column {
+      flex: 1;
+    }
+  }
