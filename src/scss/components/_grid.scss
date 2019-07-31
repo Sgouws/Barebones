@@ -1,30 +1,37 @@
 $column-padding: 1rem;
 $margin-bottom: 1rem;
 
-%column-padding {
+@mixin column-padding () {
   padding-left: $column-padding;
   padding-right: $column-padding;
 }
 
-@mixin row-margin () {
-  margin-left: -$column-padding;
-  margin-right: -$column-padding;
-}
 
 .flex-row {
-  @include row-margin();
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
   
-.flex-column {
-    flex-basis: 50%;
-    padding: $column-padding;
+
+
+.flex-sm,
+.flex-lg {
+  flex-basis: 100%;
+  margin-bottom: $margin-bottom;
+  height:30px;
+  background:black!important;
+  border:2px solid red;
+}
+
+@include small-breakpoint {
+  .flex-sm{
+    flex: 1;
   }
-  
-  @media screen and (min-width: 800px) {
-    .flex.column {
-      flex: 1;
-    }
+}
+
+@include large-breakpoint {
+  .flex-lg{
+    flex: 1;
   }
+}

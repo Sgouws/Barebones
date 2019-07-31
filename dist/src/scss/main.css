@@ -140,20 +140,27 @@ html {
 }
 
 .flex-row {
-  margin-left: -1rem;
-  margin-right: -1rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-.flex-column {
-  flex-basis: 50%;
-  padding: 1rem;
+.flex-sm,
+.flex-lg {
+  flex-basis: 100%;
+  margin-bottom: 1rem;
+  height: 30px;
+  background: black !important;
+  border: 2px solid red;
 }
 
-@media screen and (min-width: 800px) {
-  .flex.column {
+@media (min-width: 600px) {
+  .flex-sm {
+    flex: 1;
+  }
+}
+@media (min-width: 1000px) {
+  .flex-lg {
     flex: 1;
   }
 }
