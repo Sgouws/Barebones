@@ -36,26 +36,40 @@ $button-types : ('.button, a.button, button, [type=submit], [type=reset], [type=
 $btn-color: $primary-color;
 $accent-btn-color: $secondary-color;
 
-$btn-border-width: 2px;                                  
+$btn-border-width: 0.2rem;
+$btn-radius: 0.3rem;
+$btn-padding: 0 4.5rem;
+$btn-height: 4.1rem;
+$btn-background: transparent;
 $btn-border-style: solid;                                   
 $btn-border-color: $btn-color;  
 $btn-border: $btn-border-width $btn-border-style  $btn-border-color;
 
-$btn-radius: 3px;
-$btn-background: transparent;
-$btn-text-color: #ffffff;
-$btn-text-color-hover: #ffffff;
-$btn-font-size: 2rem;
-$btn-padding: 0 4.5rem;
-$btn-height: 4.1rem;
-$btn-line-height: 37px;
 $btn-font-family: 'Roboto Condensed', sans-serif;
+$btn-font-size: 2rem;
+$btn-line-height: 3.7rem;
 $btn-font-weight:300;
 $btn-letter-spacing: 2px;
+$btn-text-color: #ffffff;
+$btn-text-color-hover: #ffffff;
+$btn-text-decoration: none;
+
+
 
 $accent-btn-background: transparent;
 $accent-btn-text-color-hover: #ffffff;
 $accent-btn-text-color: #ffffff;
+
+$btn-transition: all 0.3s;
+
+
+
+
+
+
+
+
+
 
                                
                   

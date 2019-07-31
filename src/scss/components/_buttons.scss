@@ -4,7 +4,7 @@
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
-  text-decoration: none;
+  text-decoration: $btn-text-decoration;
   line-height: 1;
   border: $btn-border;
   border-radius: $btn-radius;
@@ -23,8 +23,8 @@
   border: $btn-border-width $btn-border-style darken($btn-border-color, 10%);
   //background: $button-background-hover;
   //color: $button-color;
-  transition: all 0.3s;
-  text-decoration: none;
+  transition: $btn-transition;
+  text-decoration: $btn-text-decoration;
 }
 
 // Buttons on focus
@@ -32,7 +32,7 @@
   //border: $button-border-width $button-border-style darken($button-border-color, 10%);
   //background: darken($button-background, 10%);
   //color: $button-color;
-  text-decoration: none;
+  text-decoration: $btn-text-decoration;
 }
 
 // Apply styles to .button class, button element, and button-based inputs
