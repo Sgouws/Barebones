@@ -54,10 +54,44 @@
   }
 }
 
-.btn-solid{
-  background: $btn-color;
 
-  &:hover{
-    background: darken($btn-color, 10%);
+@mixin btn-solid($target,$color){
+  button#{$target}.btn-solid{
+    background: $color;
+
+    &:hover{
+      background: darken($color, 10%);
+    }
   }
+}
+
+
+@include btn-solid('.btn-primary',$btn-color);
+@include btn-solid('.btn-accent',$accent-btn-color);
+
+.btn-primary,
+a.btn-primary {
+  color: $btn-text-color;
+  border: 2px solid $btn-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $btn-text-color-hover;
+    border: 2px solid darken($btn-color, 10%);
+  }
+}
+
+.btn-accent,
+a.btn-accent {
+  color: $accent-btn-text-color;
+  border: 2px solid $accent-btn-color;
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $accent-btn-text-color-hover;
+    border: 2px solid darken($accent-btn-color, 10%);
+  }
+  
 }

@@ -206,9 +206,42 @@ body {
   border: 0;
   padding: 0;
 }
-.btn-solid {
+button.btn-primary.btn-solid {
   background: #e22866;
 }
-.btn-solid:hover {
+button.btn-primary.btn-solid:hover {
   background: #bd1a50;
+}
+
+button.btn-accent.btn-solid {
+  background: #28b9e2;
+}
+button.btn-accent.btn-solid:hover {
+  background: #1a99bd;
+}
+
+.btn-primary,
+a.btn-primary {
+  color: #ffffff;
+  border: 2px solid #e22866;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active,
+a.btn-primary:hover,
+a.btn-primary:focus,
+a.btn-primary:active {
+  color: #ffffff;
+  border: 2px solid #bd1a50;
+}
+
+.btn-accent,
+a.btn-accent {
+  color: #ffffff;
+  border: 2px solid #28b9e2;
+}
+.btn-accent:hover, .btn-accent:focus, .btn-accent:active,
+a.btn-accent:hover,
+a.btn-accent:focus,
+a.btn-accent:active {
+  color: #ffffff;
+  border: 2px solid #1a99bd;
 }
