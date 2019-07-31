@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "buildr": "parcel build index.html src/scss/main.scss --no-minify --no-source-maps --no-content-hash --out-dir dist"
+    "buildr": "rm -rf dist/* && parcel build index.html src/scss/main.scss --no-minify --no-source-maps --no-content-hash --out-dir dist"
   },
   "repository": {
     "type": "git",

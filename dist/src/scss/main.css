@@ -150,8 +150,6 @@ html {
   flex-basis: 100%;
   margin-bottom: 1rem;
   height: 30px;
-  background: black !important;
-  border: 2px solid red;
 }
 
 @media (min-width: 600px) {
@@ -170,4 +168,47 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.button, a.button, button, [type=submit], [type=reset], [type=button] {
+  -webkit-appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  line-height: 1;
+  border: 2px solid #e22866;
+  border-radius: 3px;
+  background: transparent;
+  color: #ffffff;
+  line-height: 37px;
+  height: 4.1rem;
+  padding: 0 4.5rem;
+  font-size: 2rem;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.button:hover, button:hover, [type=submit]:hover, [type=reset]:hover, [type=button]:hover {
+  border: 2px solid #bd1a50;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+.button:focus, .button:active, button:focus, button:active, [type=submit]:focus, [type=submit]:active, [type=reset]:focus, [type=reset]:active, [type=button]:focus, [type=button]:active {
+  text-decoration: none;
+}
+
+.button::-moz-focus-inner, a.button::-moz-focus-inner, button::-moz-focus-inner, [type=submit]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=button]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.btn-solid {
+  background: #e22866;
+}
+.btn-solid:hover {
+  background: #bd1a50;
 }

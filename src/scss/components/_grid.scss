@@ -20,8 +20,6 @@ $margin-bottom: 1rem;
   flex-basis: 100%;
   margin-bottom: $margin-bottom;
   height:30px;
-  background:black!important;
-  border:2px solid red;
 }
 
 @include small-breakpoint {

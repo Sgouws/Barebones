@@ -23,3 +23,28 @@ $desktop: $medium !default;
 //----------------------------------------------------
 
 $body-font-size : 1.6rem !default;
+$body-font-family: 'Roboto Condensed', sans-serif;
+
+//----------------------------------------------------
+// Buttons
+//----------------------------------------------------
+$button-types : ('.button, a.button, button, [type=submit], [type=reset], [type=button]');
+$btn-color: #e22866;
+
+$btn-border-width      : 2px     ;                                  
+$btn-border-style      : solid ;                                   
+$btn-border-color      : $btn-color;  
+
+$btn-border: $btn-border-width $btn-border-style  $btn-border-color;
+$btn-radius: 3px;
+$btn-background: transparent;
+$btn-text-color: #ffffff;
+$btn-font-size: 2rem;
+$btn-padding: 0 4.5rem;
+$btn-height: 4.1rem;
+$btn-line-height: 37px;
+$btn-font-family: 'Roboto Condensed', sans-serif;
+$btn-font-weight:300;
+$btn-letter-spacing: 2px;
+                               
+                  

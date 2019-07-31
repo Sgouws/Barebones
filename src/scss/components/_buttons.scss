@@ -6,5 +6,58 @@
   cursor: pointer;
   text-decoration: none;
   line-height: 1;
+  border: $btn-border;
+  border-radius: $btn-radius;
+  background: $btn-background;
+  color: $btn-text-color;
+  line-height: $btn-line-height;
+  height: $btn-height;
+  padding: $btn-padding;
+  font-size: $btn-font-size;
+  font-family: $btn-font-family;
+  font-weight: $btn-font-weight;
+  letter-spacing: $btn-letter-spacing
 }
 
+%buttons-hover {
+  border: $btn-border-width $btn-border-style darken($btn-border-color, 10%);
+  //background: $button-background-hover;
+  //color: $button-color;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+// Buttons on focus
+%buttons-focus {
+  //border: $button-border-width $button-border-style darken($button-border-color, 10%);
+  //background: darken($button-background, 10%);
+  //color: $button-color;
+  text-decoration: none;
+}
+
+// Apply styles to .button class, button element, and button-based inputs
+#{$button-types} {
+  @extend %buttons;
+
+  &::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+  }
+
+  &:hover {
+    @extend %buttons-hover;
+  }
+
+  &:focus,
+  &:active {
+    @extend %buttons-focus;
+  }
+}
+
+.btn-solid{
+  background: $btn-color;
+
+  &:hover{
+    background: darken($btn-color, 10%);
+  }
+}
