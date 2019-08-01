@@ -162,6 +162,19 @@ html {
     flex: 1;
   }
 }
+@media (min-width: 1000px) {
+  ._25 {
+    flex: 2.5;
+  }
+
+  ._55 {
+    flex: 5.5;
+  }
+
+  ._20 {
+    flex: 2;
+  }
+}
 :root {
   font-size: 62.5%;
 }
