@@ -12,6 +12,7 @@ $large: 1200px !default;
 //----------------------------------------------------
 // Break Points
 //----------------------------------------------------
+
 $mobile: $x-small !default;
 $tablet: $small !default;
 $desktop: $medium !default;
@@ -27,7 +28,10 @@ $secondary-color: #28b9e2;
 //----------------------------------------------------
 
 $body-font-size : 1.6rem !default;
-$body-font-family: 'Roboto Condensed', sans-serif;
+$main-font-family: 'Roboto Condensed', sans-serif;
+
+$body-font-family: $main-font-family;
+$button-font-family: $main-font-family;
 
 //----------------------------------------------------
 // Buttons
@@ -45,7 +49,7 @@ $btn-border-style: solid;
 $btn-border-color: $btn-color;  
 $btn-border: $btn-border-width $btn-border-style  $btn-border-color;
 
-$btn-font-family: 'Roboto Condensed', sans-serif;
+$btn-font-family: $main-font-family;
 $btn-font-size: 2rem;
 $btn-line-height: 3.7rem;
 $btn-font-weight:300;

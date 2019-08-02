@@ -20,18 +20,15 @@
 }
 
 %buttons-hover {
-  border: $btn-border-width $btn-border-style darken($btn-border-color, 10%);
-  //background: $button-background-hover;
-  //color: $button-color;
+  border: $btn-border-width $btn-border-style darken($btn-border-color, 10%); 
   transition: $btn-transition;
   text-decoration: $btn-text-decoration;
 }
 
 // Buttons on focus
 %buttons-focus {
-  //border: $button-border-width $button-border-style darken($button-border-color, 10%);
-  //background: darken($button-background, 10%);
-  //color: $button-color;
+  border: $btn-border-width $btn-border-style darken($btn-border-color, 10%); 
+  transition: $btn-transition;
   text-decoration: $btn-text-decoration;
 }
 
