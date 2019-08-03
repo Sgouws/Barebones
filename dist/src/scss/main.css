@@ -271,6 +271,20 @@ a.btn-accent:active {
 
 .center {
   display: flex;
-  align-items: center;
   justify-content: center;
+}
+
+.v-center {
+  display: flex;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: right;
+}
+
+.left {
+  display: flex;
+  justify-content: left;
 }
