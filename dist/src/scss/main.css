@@ -156,7 +156,6 @@ html {
 .flex-lg {
   flex-basis: 100%;
   margin-bottom: 1rem;
-  height: 30px;
   border: 2px double lightblue;
   height: auto;
 }
@@ -268,4 +267,10 @@ a.btn-accent:focus,
 a.btn-accent:active {
   color: #ffffff;
   border: 2px solid #1a99bd;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

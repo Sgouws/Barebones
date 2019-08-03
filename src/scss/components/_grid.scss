@@ -23,10 +23,8 @@ $margin-bottom: 1rem;
 .flex-lg {
   flex-basis: 100%;
   margin-bottom: $margin-bottom;
-  height:30px;
   border: 2px double lightblue;
   height: auto;
-
 }
 
 @include small-breakpoint {
