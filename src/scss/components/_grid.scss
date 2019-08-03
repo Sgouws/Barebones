@@ -9,12 +9,14 @@ $margin-bottom: 1rem;
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  border: 2px dashed red;
 }
 
 .flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  border: 2px dotted white;
 }
 
 .flex-sm,
@@ -22,6 +24,9 @@ $margin-bottom: 1rem;
   flex-basis: 100%;
   margin-bottom: $margin-bottom;
   height:30px;
+  border: 2px double lightblue;
+  height: auto;
+
 }
 
 @include small-breakpoint {
