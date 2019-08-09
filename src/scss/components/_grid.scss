@@ -40,6 +40,9 @@ $margin-bottom: 1rem;
 }
 
 @include large-breakpoint {
+  ._10{
+    flex: 0.1;
+  }
   ._25 {
     flex: 2.5;
   }
