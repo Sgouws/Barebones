@@ -2,10 +2,10 @@
 ### Simple responsive flexbox based framework built is SASS
 
 ## Todo:
-
-⋅⋅* Add NPM package
-⋅⋅* Add installation instructions
-⋅⋅* Component directory
-⋅⋅* Bundle with React component library
-
+1. Add NPM package
+2. Add installation instructions
+3. Component directory
+4. Bundle with React component library
+5. Webfont loader implementation
+6. Bash project setup files
 
